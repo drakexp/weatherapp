@@ -31,7 +31,7 @@ router.get("/map/:location", function(req, res, next) {
 })
 
 router.get("/weather/:latitude&:longitude&:year&:month&:day", function(req, res, next) {
-   forecast = new DarkSky('80901354988cf5e12a24cda550279f53');
+   forecast = new DarkSky('30d7abe2ce9a7a6a426f1e1a6406e3b0');
    var lat = req.params.latitude;
    var lng = req.params.longitude;
    var year = req.params.year;

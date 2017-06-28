@@ -137,7 +137,6 @@ function getWeatherInfo(position) {
       url: "/weather/" + position.lat + "&" + position.lng + "&" + year + "&" + month + "&" + day,
       success: function(result) {
          var data = JSON.parse(result);
-         console.log(data)
          displayCurrentWeather(data[0].currently, data[0].offset);
          displayHourlyWeather(data[0].hourly.data, data[0].offset);
          displayDailyWeather(data[0].daily.data, data[0].offset);
