@@ -1,0 +1,71 @@
+<header class="page-header text-center text-uppercase text-primary">
+   <h1>weather app</h1>
+</header>
+<div>
+   <form class="container-fluid" id="search">
+      <div class="input-group input-group-lg " id="search-section">
+         <input type="text" class="form-control text-center" id='sinput' name='sinput' placeholder="Enter Your Location" list="datalistlocations">
+            <datalist id="datalistlocations">
+            </datalist>
+         <div class="input-group-btn">
+            <button type="submit" class="btn btn-default" id="submit"><i class="glyphicon glyphicon-search"></i></button>
+         </div>   
+      </div>
+   </form>
+</div>
+<div id="map">
+</div>
+<div class="container-fluid" id="weather">
+   <div id="firstweatherpanel">
+      <div id="currentweatherpanel">
+         <p class="informationheader"> Current Information </p>
+         <table id="currentweather">
+            <tr>
+               <th><strong>Time:</strong></th>
+               <td id="curtime"></td>
+            </tr>
+            <tr>
+               <th><strong>Weather:</strong></th>
+               <td id="curweather"></td>
+            </tr>
+            <tr>
+               <th><strong>Temperature:</strong></th>
+               <td id="curtemp"></td>
+            </tr>
+            <tr>
+               <th><strong>Feels like:</strong></th>
+               <td id="curapptemp"></td>
+            </tr>
+            <tr>
+               <th><strong>Humidity:</strong></th>
+               <td id="curhumidity"></td>
+            </tr>
+            <tr>
+               <th><strong>Chance of rain:</strong></th>
+               <td id="currain"></td>
+            </tr>
+            <tr>
+               <th><strong>UV index:</strong></th>
+               <td id="curuv"></td>
+            </tr>
+         </table>
+      </div>
+      <div id="hourlypanel">
+         <p class="informationheader"> Hourly Information </p>
+         <div id= "hourlyweather">
+         </div>
+      </div>
+   </div>
+   <div id="secondweatherpanel">
+      <p class="informationheader"> Daily Information </p>
+      <div id= "dailyweather">
+      </div>
+   </div>
+   <div id="thirdweatherpanel">
+      <p class="informationheader"> Temperature History </p>
+      <div id="graphcontainer">
+         <svg id="historygraph">
+         </svg>
+      </div>
+   </div>
+</div>
