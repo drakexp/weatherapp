@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 var googleMapsClient = require('@google/maps').createClient({
-  key: 'AIzaSyCfgQ-r24bVOLN2X6WqBPXjvwqd-aTeEJU'
+  key: 'API_KEY_HERE'
 });
 var gmapsurl = "https://maps.googleapis.com/maps/api/geocode/json?";
 var DarkSky = require('dark-sky');
@@ -31,7 +31,7 @@ router.get("/map/:location", function(req, res, next) {
 })
 
 router.get("/weather/:latitude&:longitude&:year&:month&:day", function(req, res, next) {
-   forecast = new DarkSky('30d7abe2ce9a7a6a426f1e1a6406e3b0');
+   forecast = new DarkSky('API_KEY_HERE');
    var lat = req.params.latitude;
    var lng = req.params.longitude;
    var year = req.params.year;
