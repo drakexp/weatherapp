@@ -1,12 +1,17 @@
 # Weather App
 
-This is a basic weather app that displays information on current weather, daily forecasts, hourly forecasts and a bar chart containing High and Low Temperature's on the same date from the previous five years. Visit https://dkimweather.herokuapp.com/ to view the application.
+This is a basic weather app that displays information on current weather, daily forecasts, hourly forecasts and a bar chart containing High and Low Temperature's on the same date from the previous five years. Visit https://dkimweather.herokuapp.com/ to view the sample application.
 
 ## Functionalities
 
 - Geocomplete using user location
 - Google Maps Autocomplete
 - Search history storage using localStorage. Stores up to 10 searches, and can be accessed when the search box is empty.
+
+### Installing
+
+To install this to you own environment, replace "API_KEY_HERE" with your Dark Sky/Google Maps API keys to the variable declarations in index.js and layout.hbs
+The project should work with the package.json apps installed and Node installed on your machine.
 
 ## Built With
 
